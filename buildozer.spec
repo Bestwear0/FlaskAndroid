@@ -20,7 +20,7 @@ version = 0.1.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,flask
+requirements = python3==3.9,flask
 
 # (str) Presplash of the application
 presplash.filename = %(source.dir)s/assets/logo.jpg
@@ -49,7 +49,7 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
 android.api = 28
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
-android.sdk_path = ~/Android/Sdk
+#android.sdk_path = ~/Android/Sdk
 
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
@@ -57,7 +57,7 @@ android.sdk_path = ~/Android/Sdk
 android.skip_update = True
 
 # (str) Android logcat filters to use
-android.logcat_filters = *:S python:D
+#android.logcat_filters = *:S python:D
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.arch = armeabi-v7a
